@@ -1,0 +1,258 @@
+/* RESET */
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #FAF7F2;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #8FAF9F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.judul,
+.gt-13 {
+    color: #3E2723;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    background-color: #FFF1E6;
+    padding: 30px 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+    animation: fadeUp 0.8s ease;
+}
+
+.hero h3,
+.hero h2 {
+    font-size: 26px;
+    color: #3E2723;
+}
+
+.hero p {
+    max-width: 500px;
+    margin: 15px auto;
+    font-size: 17px;
+    color: #5A3A2E;
+}
+
+/* MENU SECTION */
+.menu {
+    background-color: #FFFFFF;
+    color: #3E2723;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px;
+    text-align: center;
+    animation: fadeUp 0.8s ease;
+}
+
+.pix {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* PILIHAN MENU */
+.pilihan {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap:wrap; 
+}
+
+.pilihan a {
+    text-decoration: none;
+}
+
+/* BUTTON MENU */
+.Dessert {
+    background-color: #FFF1E6;
+    border-radius: 10px;
+    color: #5b3a3a;
+    padding: 14px 20px;
+    font-size: 18px;
+    display: block;
+    width: 260px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.Dessert:hover {
+    background-color: #FFE1D0;
+    color: #C96A4A;
+    transform: scale(1.05);
+}
+
+/* FORM */
+.contact-form {
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: #FFF1E6;
+    padding: 25px;
+    border-radius: 15px;
+    animation: fadeUp 0.8s ease;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+label {
+    font-size: 18px;
+    color: #3E2723;
+    margin-bottom: 6px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1.5px solid #C96A4A;
+    background-color: #FAF7F2;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #b53c26;
+    background-color: #FFF;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* BUTTON SUBMIT */
+.btn-kirim {
+    width: 100%;
+    background-color: #C96A4A;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-kirim:hover {
+    background-color: #b53c26;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 768px) {
+
+    .judul,
+    .gt-13 {
+        font-size: 22px;
+    }
+
+    .hero h3,
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .pilihan {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .Dessert {
+        width: 90%;
+        font-size: 20px
+    }
+
+    .menu {
+        margin: 15px;
+    }
+}
+
+/* ===== KERANJANG ===== */
+.cart {
+    background-color: #fff;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.cart h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #333;
+}
+
+/* list item */
+#cart-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#cart-list li {
+    background: #f5f5f5;
+    margin-bottom: 10px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ===== TOMBOL WA ===== */
+.btn-wa {
+    width: 100%;
+    background: #25D366;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-wa:hover {
+    background: #1ebd5a;
+    transform: scale(1.02);
+}
+

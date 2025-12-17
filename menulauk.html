@@ -1,0 +1,119 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu Lauk</title>
+
+        <link rel="stylesheet" href="menulauk.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="navbar">
+                <h1 class="judul">Menu Lauk Endull</h1>
+            </div>
+
+            <section class="hero">
+                <img src="foto makanan/ayam suwir hero.jpeg" alt="Menu Lauk Endull">
+
+                <div class="text">
+                    <h2 class="gtx-13">Masakan Rumahan, Rasa Juara</h2>
+                    <p>Lauk rumahan lezat, bikin nagih.</p>
+
+                    <div class="btn-group">
+                        <a href="index.html" class="btn-1">Home</a>
+                        <a href="dessert.html" class="btn-1">🍰 Lihat Dessert</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MENU -->
+            <section class="menu-wrapper" id="menu">
+                <h2>Pilihan Menu</h2>
+
+                <button class="menu-card"
+                    data-nama="Ayam Suwir"
+                    data-harga="25000"
+                    onclick="addToCart(this)">
+                    <img src="foto makanan/foto ayam suwir.jpg" alt="Ayam Suwir">
+                    <h3>Ayam Suwir</h3>
+                    <p class="harga">Rp 25.000</p>
+                </button>
+
+                <button class="menu-card"
+                    data-nama="Ayam Rica Rica"
+                    data-harga="30000"
+                    onclick="addToCart(this)">
+                    <img src="foto makanan/ayam rica rica.jpeg" alt="Ayam Rica Rica">
+                    <h3>Ayam Rica Rica</h3>
+                    <p class="harga">Rp 30.000</p>
+                </button>
+
+                <button class="menu-card"
+                    data-nama="Cakalang Suwir"
+                    data-harga="28000"
+                    onclick="addToCart(this)">
+                    <img src="foto makanan/cakalang suwir.jpg" alt="Cakalang Suwir">
+                    <h3>Cakalang Suwir</h3>
+                    <p class="harga">Rp 28.000</p>
+                </button>
+
+                <button class="menu-card"
+                    data-nama="Ayam Woku"
+                    data-harga="32000"
+                    onclick="addToCart(this)">
+                    <img src="foto makanan/foto ayam woku.jpg" alt="Ayam Woku">
+                    <h3>Ayam Woku</h3>
+                    <p class="harga">Rp 32.000</p>
+                </button>
+
+                <button class="menu-card"
+                    data-nama="Ayam Semur Kecap"
+                    data-harga="27000"
+                    onclick="addToCart(this)">
+                    <img src="foto makanan/ayam semur kecap.jpeg" alt="Ayam Semur Kecap">
+                    <h3>Ayam Semur Kecap</h3>
+                    <p class="harga">Rp 27.000</p>
+                </button>
+            </section>
+
+            <!-- KERANJANG -->
+            <section class="cart">
+                <h2>🛒 Keranjang</h2>
+                <ul id="cart-list"></ul>
+
+                <button onclick="gotoIndexWA()" class="btn-wa">
+                    📲 Pesan Sekarang
+                </button>
+            </section>
+
+            <!-- POPUP INPUT JUMLAH -->
+            <div class="popup-alert" id="popupAlert">
+                <div class="popup-box">
+                    <p id="popupMessage"></p>
+
+                    <input
+                        type="number"
+                        id="jumlahInput"
+                        placeholder="Masukkan jumlah"
+                        min="1"
+                    >
+
+                    <div class="popup-btn">
+                        <button onclick="submitJumlah()">OK</button>
+                        <button onclick="closePopup()">Batal</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- JS DI BAWAH -->
+        <script src="dapurmemy.js"></script>
+
+    </body>
+    </html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapur Memy</title>
+    <link rel="stylesheet" href="dapurmemy.css">
+    <script src="dapurmemy.js" defer></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <header class="judul"> Dapur Memmy</header>
+    </div>
+
+    <section class="hero">
+        <h3>Dapur Memy – Masakan Rumahan, Kualitas Terbaik </h3>
+        <p>Dapur Memy menyajikan berbagai menu rumahan, dessert, dan sarapan yang dibuat dari bahan pilihan, segar, dan
+            berkualitas</p>
+    </section>
+
+    <section class="menu">
+        <h4 class="pix">Kami menyediakan menu lauk dan dessert</h4>
+        <div class="pilihan">
+            <a href="dessert.html" class="Dessert">🍰 Lihat Dessert</a>
+            <a href="menulauk.html" class="Dessert">🍗 Lauk Hari Ini</a>
+        </div>
+    </section>
+
+    <!-- Form Kontak & Pesanan -->
+    <form class="contact-form" onsubmit="return false;">
+        <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" placeholder="Nama Anda">
+        </div>
+
+        <div class="form-group">
+            <label for="pesan">Pesanan</label>
+            <textarea id="pesan" placeholder="Tulis pesanan Anda"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="alamat">Alamat Anda</label>
+            <textarea id="alamat" placeholder="Tulis alamat Anda"></textarea>
+        </div>
+
+        <button type="button" class="btn-wa" onclick="kirimWA()">📲 Kirim via WhatsApp</button>
+    </form>
+
+</body>
+
+</html>

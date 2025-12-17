@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klappertart Homemade</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="dapurmemy.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="navbar">
+            <h1 class="gt-13">Klappertart Homemade</h1>
+        </div>
+
+        <section class="hero">
+            <img src="foto makanan/klapetra.jpg" alt="Klappertart">
+
+            <div class="text">
+                <h2 class="gt-13">Manis, Lembut, dan Fresh</h2>
+                <p>Klappertart homemade dengan bahan pilihan, tanpa pengawet.</p>
+
+                <div class="btn-group">
+                    <a href="index.html" class="btn-1">Home</a>
+                    <a href="menulauk.html" class="btn-1">Menu 🍗Lauk</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-wrapper" id="menu">
+            <h2>Pilihan Menu</h2>
+
+            <!-- Menu cards dengan data-nama & data-harga diperbaiki -->
+            <button class="menu-card" data-nama="Klappertart Besar" data-harga="150000" onclick="addToCart(this)">
+                <img src="foto makanan/foto klapetarr besar.jpg" alt="">
+                <h3>Klappertart Besar</h3>
+                <p class="harga">Rp 150k</p>
+            </button>
+
+            <button class="menu-card" data-nama="Klappertart Sedang" data-harga="75000" onclick="addToCart(this)">
+                <img src="foto makanan/foto klapetar.webp" alt="">
+                <h3>Klappertart Sedang</h3>
+                <p class="harga">Rp 75k</p>
+            </button>
+
+            <button class="menu-card" data-nama="Klappertart Kecil" data-harga="25000" onclick="addToCart(this)">
+                <img src="foto makanan/klapetar mini.webp" alt="">
+                <h3>Klappertart Kecil</h3>
+                <p class="harga">Rp 25k</p>
+            </button>
+        </section>
+
+        <section class="cart">
+            <h2>🛒 Keranjang</h2>
+            <ul id="cart-list"></ul>
+
+            <button onclick="gotoIndexWA()" class="btn-wa">
+                📲 Pesan Sekarang
+            </button>
+        </section>
+
+        <!-- Popup Alert diperbarui agar JS submitJumlah bisa bekerja -->
+            <div class="popup-alert" id="popupAlert">
+                <div class="popup-box">
+                    <p id="popupMessage"></p>
+
+                    <input
+                        type="number"
+                        id="jumlahInput"
+                        placeholder="Masukkan jumlah"
+                        min="1"
+                    >
+
+                    <div class="popup-btn">
+                        <button onclick="submitJumlah()">OK</button>
+                        <button onclick="closePopup()">Batal</button>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+</body>
+
+</html>
