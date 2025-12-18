@@ -1,5 +1,5 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
-const nomorWA = "6287848069337";
+const nomorWA = "6285934456880";
 let currentItem = null;
 
 function addToCart(btn) {
@@ -79,7 +79,7 @@ function kirimWA() {
         return;
     }
 
-    let pesanWA = `Halo Dapur Memy,\n\nNama: ${nama}\nAlamat: ${alamat}\n\nPesanan:\n${pesanTextarea}`;
+    let pesanWA = `Halo Dapur Memmy,\n\nNama: ${nama}\nAlamat: ${alamat}\n\nPesanan:\n${pesanTextarea}`;
     let total = cart.reduce((sum,item)=>sum+item.harga*item.jumlah,0);
     pesanWA += `\n\nTotal: Rp ${total.toLocaleString("id-ID")}`;
 
